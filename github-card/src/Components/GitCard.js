@@ -8,6 +8,8 @@ const GitCardContainer = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border: 12px double #FFFFFF;
   background-color: #D80000;
   font-family: 'Recursive', sans-serif;
@@ -21,7 +23,7 @@ const GitCardContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    line-height: .05;
+    line-height: .0005;
 
     p {
       font-size: 3rem;
@@ -30,12 +32,11 @@ const GitCardContainer = styled.div`
     h2 {
       color: white;
       font-size: 5rem;
+      letter-spacing: 10px;
     }
   }
 
-  .exc {
-    letter-spacing: 11px;
-  }
+
 
   .top {
     margin: 2.5% auto;
@@ -86,7 +87,7 @@ const GitCard = props => {
         <GitCardContainer>
           <div className='exception'>
             <h2 className='exc'><strong>HELLO</strong></h2>
-            <p> my name is:</p>
+            <p>my name is:</p>
           </div>
           <div className='top'>
             <img src={props.handle['avatar_url']}/>

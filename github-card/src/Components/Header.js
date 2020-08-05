@@ -8,7 +8,9 @@ const MainHeader = styled.header`
   margin: 2.5% auto;
   width: 80%;
   background-color: #D80000;
-  border: 15px double #FFFFFF;
+  border: 15px double #000000;
+  outline: 5px solid #FFFFFF;
+  outline-offset: -5px;
 
   h1 {
     width: 50%;
@@ -21,6 +23,7 @@ const MainHeader = styled.header`
     font-family: 'VT323', monospace;
     font-size: 5rem;
   }
+  
   div {
     width: 90%;
     display: flex;
@@ -28,6 +31,8 @@ const MainHeader = styled.header`
     background-color: #b29d69;
     border: 3px solid #000000;
     margin: 2.5% auto;
+    outline: 5px solid #FFFFFF;
+    outline-offset: 5px;
 
     label {
       margin: 2.5% auto 0;
@@ -56,6 +61,7 @@ const MainHeader = styled.header`
 
       &:hover {
         background-color: #555555;
+        text-transform: lowercase;
       }
     }
 }
